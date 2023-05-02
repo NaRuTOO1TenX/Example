@@ -306,8 +306,56 @@ HEAD is now at 67c666f Information GitHub
 user@WIN-47U2UHOPSA0 MINGW64 ~/Desktop/HTML New ((67c666f...))
 $
 
+user@WIN-47U2UHOPSA0 MINGW64 ~/Desktop/HTML New ((67c666f...))
+$ git checkout master
+error: Your local changes to the following files would be overwritten by checkout:
+        index.html
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+user@WIN-47U2UHOPSA0 MINGW64 ~/Desktop/HTML New ((67c666f...))
+$ git branch
+* (HEAD detached at 67c666f)
+  master
+
+user@WIN-47U2UHOPSA0 MINGW64 ~/Desktop/HTML New ((67c666f...))
+$ git branch footer
+
+user@WIN-47U2UHOPSA0 MINGW64 ~/Desktop/HTML New ((67c666f...))
+$ git checkout footer
+Switched to branch 'footer'
+M       index.html
+
+user@WIN-47U2UHOPSA0 MINGW64 ~/Desktop/HTML New (footer)
+$ git status
+On branch footer
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+user@WIN-47U2UHOPSA0 MINGW64 ~/Desktop/HTML New (footer)
+$ git add .
+
+user@WIN-47U2UHOPSA0 MINGW64 ~/Desktop/HTML New (footer)
+$ git commit -m "Footer branchi ichiga footernini qo'shish"
+[footer d958730] Footer branchi ichiga footernini qo'shish
+ 1 file changed, 161 insertions(+)
+
+user@WIN-47U2UHOPSA0 MINGW64 ~/Desktop/HTML New (footer)
+$
     
 -->
+
+
+
+
+
+
+
+
 
 
 <!--   Help menu 
