@@ -344,8 +344,150 @@ $ git commit -m "Footer branchi ichiga footernini qo'shish"
 [footer d958730] Footer branchi ichiga footernini qo'shish
  1 file changed, 161 insertions(+)
 
+user@WIN-47U2UHOPSA0 MINGW64 ~/Desktop/HTML New ((67c666f...))
+$ git status
+HEAD detached at 67c666f
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+user@WIN-47U2UHOPSA0 MINGW64 ~/Desktop/HTML New ((67c666f...))
+$ git add .
+
+user@WIN-47U2UHOPSA0 MINGW64 ~/Desktop/HTML New ((67c666f...))
+$ git commit -m "Gitga push qilish"
+[detached HEAD f1fa94c] Gitga push qilish
+ 1 file changed, 305 insertions(+)
+
+user@WIN-47U2UHOPSA0 MINGW64 ~/Desktop/HTML New ((f1fa94c...))
+$ git push
+fatal: You are not currently on a branch.
+To push the history leading to the current (detached HEAD)
+state now, use
+
+    git push origin HEAD:<name-of-remote-branch>
+
+
+user@WIN-47U2UHOPSA0 MINGW64 ~/Desktop/HTML New ((f1fa94c...))
+$ git push origin HEAD: master
+fatal: invalid refspec 'HEAD:'
+
+user@WIN-47U2UHOPSA0 MINGW64 ~/Desktop/HTML New ((f1fa94c...))
+$ git push origin master
+Enumerating objects: 21, done.
+Counting objects: 100% (21/21), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (18/18), done.
+Writing objects: 100% (21/21), 3.56 KiB | 1.19 MiB/s, done.
+Total 21 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), done.
+To https://github.com/NaRuTOO1TenX/Example.git
+ * [new branch]      master -> master
+
+user@WIN-47U2UHOPSA0 MINGW64 ~/Desktop/HTML New ((f1fa94c...))
+$ git branch
+* (HEAD detached from 67c666f)
+  footer
+  master
+
+user@WIN-47U2UHOPSA0 MINGW64 ~/Desktop/HTML New ((f1fa94c...))
+$ git branch footer
+fatal: a branch named 'footer' already exists
+
+user@WIN-47U2UHOPSA0 MINGW64 ~/Desktop/HTML New ((f1fa94c...))
+$ git checkout footer
+Warning: you are leaving 1 commit behind, not connected to
+any of your branches:
+
+  f1fa94c Gitga push qilish
+
+If you want to keep it by creating a new branch, this may be a good time
+to do so with:
+
+ git branch <new-branch-name> f1fa94c
+
+Switched to branch 'footer'
+
 user@WIN-47U2UHOPSA0 MINGW64 ~/Desktop/HTML New (footer)
+$ git push origin footer
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 3.88 KiB | 3.88 MiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+remote:
+remote: Create a pull request for 'footer' on GitHub by visiting:
+remote:      https://github.com/NaRuTOO1TenX/Example/pull/new/footer
+remote:
+To https://github.com/NaRuTOO1TenX/Example.git
+ * [new branch]      footer -> footer
+
+user@WIN-47U2UHOPSA0 MINGW64 ~/Desktop/HTML New (footer)
+$ git merge footer
+Already up to date.
+
+user@WIN-47U2UHOPSA0 MINGW64 ~/Desktop/HTML New (footer)
+$ git brach Lesson-10
+git: 'brach' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+
+user@WIN-47U2UHOPSA0 MINGW64 ~/Desktop/HTML New (footer)
+$ git branch "Lesson-9"
+
+user@WIN-47U2UHOPSA0 MINGW64 ~/Desktop/HTML New (footer)
+$ git checkout "Lesson-9"
+Switched to branch 'Lesson-9'
+
+user@WIN-47U2UHOPSA0 MINGW64 ~/Desktop/HTML New (Lesson-9)
+$ mkdir style
+mkdir: cannot create directory ‘style’: File exists
+
+user@WIN-47U2UHOPSA0 MINGW64 ~/Desktop/HTML New (Lesson-9)
+$ touch lesson_9.html
+
+user@WIN-47U2UHOPSA0 MINGW64 ~/Desktop/HTML New (Lesson-9)
+$ git status
+On branch Lesson-9
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        lesson_9.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+user@WIN-47U2UHOPSA0 MINGW64 ~/Desktop/HTML New (Lesson-9)
+$ git add .
+
+user@WIN-47U2UHOPSA0 MINGW64 ~/Desktop/HTML New (Lesson-9)
+$ git commit -m "Lesson-9"
+[Lesson-9 618186c] Lesson-9
+ 1 file changed, 12 insertions(+)
+ create mode 100644 lesson_9.html
+
+user@WIN-47U2UHOPSA0 MINGW64 ~/Desktop/HTML New (Lesson-9)
+$ git push origin "Lesson-9"
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 483 bytes | 483.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'Lesson-9' on GitHub by visiting:
+remote:      https://github.com/NaRuTOO1TenX/Example/pull/new/Lesson-9
+remote:
+To https://github.com/NaRuTOO1TenX/Example.git
+ * [new branch]      Lesson-9 -> Lesson-9
+
+user@WIN-47U2UHOPSA0 MINGW64 ~/Desktop/HTML New (Lesson-9)
 $
+
     
 -->
 
