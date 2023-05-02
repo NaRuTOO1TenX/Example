@@ -488,6 +488,48 @@ To https://github.com/NaRuTOO1TenX/Example.git
 user@WIN-47U2UHOPSA0 MINGW64 ~/Desktop/HTML New (Lesson-9)
 $
 
+
+user@WIN-47U2UHOPSA0 MINGW64 ~/Desktop/HTML New (Lesson-9)
+$ git status
+On branch Lesson-9
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   lesson_9.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+user@WIN-47U2UHOPSA0 MINGW64 ~/Desktop/HTML New (Lesson-9)
+$ git add .
+
+user@WIN-47U2UHOPSA0 MINGW64 ~/Desktop/HTML New (Lesson-9)
+$ git commit -m "Lesson-9"
+[Lesson-9 0dbac69] Lesson-9
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+user@WIN-47U2UHOPSA0 MINGW64 ~/Desktop/HTML New (Lesson-9)
+$ git push origin Lesson-9
+fatal: unable to access 'https://github.com/NaRuTOO1TenX/Example.git/': Could not resolve host: github.com
+
+user@WIN-47U2UHOPSA0 MINGW64 ~/Desktop/HTML New (Lesson-9)
+$ git push origin "Lesson-9"
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 1.91 KiB | 1.91 MiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/NaRuTOO1TenX/Example.git
+   618186c..0dbac69  Lesson-9 -> Lesson-9
+
+user@WIN-47U2UHOPSA0 MINGW64 ~/Desktop/HTML New (Lesson-9)
+$ ^C
+
+user@WIN-47U2UHOPSA0 MINGW64 ~/Desktop/HTML New (Lesson-9)
+$
+
+
     
 -->
 
